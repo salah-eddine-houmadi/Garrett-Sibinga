@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css" rel="stylesheet" />
+
+	<title>wel</title>
+</head>
+<body>
+		  <div class="wrap">
+		<section class="cube-container">
+		  <div id="cube">
+		    <figure class="front">
+		      <div class="col-md-8 col-sm-12" style="background-image: url('http://garrett.is/wp-content/uploads/2017/11/colorado-canyon.jpg');"></div>
+		      <div class="col-md-4" style="height:inherit;display:inline-block;">
+					    <a href="#"><h1>Garrett Sibinga</h1></a>
+					          	<h2 class="featured-title">
+					          		<strong>Design and Development</strong> 
+		                  </h2>
+					          	<p class="info-tag">Garrett is a New York based designer and developer working primarily in HTML, CSS, and Javascript. After attending Oberlin College, Garrett began his professional career in Digital Design. Garrett's work has been featured in the New York Times, and his designs were sold on top of the World Trade Center. Garrett lives and works in Brooklyn.</a></p>
+					            <hr>
+					            <strong>NODE.JS, HTML, CSS, SVG</strong>	
+		       </div>
+		    </figure>
+		    <figure class="back"><div class="col-md-12" style="background-image:url('http://garrett.is/wp-content/uploads/2017/11/route-1.jpg');"></div>2</figure>
+		    <figure class="right">3</figure>
+		    <figure class="left">4</figure>
+		    <figure class="top">5</figure>
+		    <figure class="bottom">6</figure>
+		  </div>
+		</section>
+		  
+		</div>
+
+		<div class="button-wrap">
+		  <button class="previous">Previous</button>
+		  <button class="next">Next</button>  
+		</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+	var counter = 0;
+	$('.next').on('click', function(){
+	  counter -= 90;
+	  var rotation = 'translateZ( -50vw ) rotateY( ' + counter + 'deg )';
+	  $('#cube').css('transform', rotation);
+	});
+	$('.previous').on('click', function(){
+	  counter += 90;
+	  var rotation = 'translateZ( -50vw ) rotateY( ' + counter + 'deg )';
+	  $('#cube').css('transform', rotation);
+	});
+</script>
+    	
+</body>
+</html>
